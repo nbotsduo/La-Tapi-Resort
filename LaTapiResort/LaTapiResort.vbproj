@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{52ADBD60-A16A-40BA-B93C-E8765D91CE72}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>LaTapiResort.My.MyApplication</StartupObject>
+    <RootNamespace>LaTapiResort</RootNamespace>
+    <AssemblyName>LaTapiResort</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>LaTapiResort.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>LaTapiResort.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAdminHome.Designer.vb">
+      <DependentUpon>frmAdminHome.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdminHome.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBookCafe.Designer.vb">
+      <DependentUpon>frmBookCafe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBookCafe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBookHall.Designer.vb">
+      <DependentUpon>frmBookHall.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBookHall.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBookRoom.Designer.vb">
+      <DependentUpon>frmBookRoom.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBookRoom.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCafe.Designer.vb">
+      <DependentUpon>frmCafe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCafe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditCafe.Designer.vb">
+      <DependentUpon>frmEditCafe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditCafe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditHall.Designer.vb">
+      <DependentUpon>frmEditHall.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditHall.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditRoom.Designer.vb">
+      <DependentUpon>frmEditRoom.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditRoom.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHall.Designer.vb">
+      <DependentUpon>frmHall.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmHall.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmhotel.Designer.vb">
+      <DependentUpon>frmhotel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmhotel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListCafe.Designer.vb">
+      <DependentUpon>frmListCafe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmListCafe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListHall.Designer.vb">
+      <DependentUpon>frmListHall.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmListHall.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListRoom.Designer.vb">
+      <DependentUpon>frmListRoom.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmListRoom.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReg.Designer.vb">
+      <DependentUpon>frmReg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmReg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUserHome.Designer.vb">
+      <DependentUpon>frmUserHome.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmUserHome.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="la_tapi_resortDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>la_tapi_resortDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmAdminHome.resx">
+      <DependentUpon>frmAdminHome.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBookCafe.resx">
+      <DependentUpon>frmBookCafe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBookHall.resx">
+      <DependentUpon>frmBookHall.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBookRoom.resx">
+      <DependentUpon>frmBookRoom.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCafe.resx">
+      <DependentUpon>frmCafe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditCafe.resx">
+      <DependentUpon>frmEditCafe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditHall.resx">
+      <DependentUpon>frmEditHall.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditRoom.resx">
+      <DependentUpon>frmEditRoom.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHall.resx">
+      <DependentUpon>frmHall.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmhotel.resx">
+      <DependentUpon>frmhotel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListCafe.resx">
+      <DependentUpon>frmListCafe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListHall.resx">
+      <DependentUpon>frmListHall.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListRoom.resx">
+      <DependentUpon>frmListRoom.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReg.resx">
+      <DependentUpon>frmReg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUserHome.resx">
+      <DependentUpon>frmUserHome.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="la_tapi_resortDataSet.xsc">
+      <DependentUpon>la_tapi_resortDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="la_tapi_resortDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>la_tapi_resortDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="la_tapi_resortDataSet.xss">
+      <DependentUpon>la_tapi_resortDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
